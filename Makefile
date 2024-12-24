@@ -74,7 +74,7 @@ ENABLE_SATCOM_AMP									:= 0
 ENABLE_CW                   						:= 0
 
 #=============== EXTRA: MESSENGER ===============# 
-ENABLE_MESSENGER            				:= 1
+ENABLE_MESSENGER            				:= 0
 ENABLE_MESSENGER_MORE_ONE_LINE				:= 0
 # 124 bytes
 ENABLE_MESSENGER_SHOW_RX_FREQ				:= 1
