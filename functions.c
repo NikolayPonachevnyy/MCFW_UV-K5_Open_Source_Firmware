@@ -204,7 +204,7 @@ if (gSetting_Ptt_Hold) {
 #if defined(ENABLE_TX1750)
       if (gAlarmState != ALARM_STATE_OFF) {
         if (gAlarmState == ALARM_STATE_TX1750) {
-          BK4819_TransmitTone(true, 1750);
+          BK4819_TransmitTone(true, 1000);
         }
         SYSTEM_DelayMs(2);
         GPIO_SetBit(&GPIOC->DATA, GPIOC_PIN_AUDIO_PATH);
