@@ -6,94 +6,94 @@ TARGET = firmware
 
 
 #================== STOCK QUANSHENG FERATURES ==================#
-ENABLE_AIRCOPY 										:= 0
+ENABLE_AIRCOPY 						:= 0
 # 3856 bytes
-ENABLE_FMRADIO										:= 1
-ENABLE_FMRADIO_SMALL								:= 1
+ENABLE_FMRADIO						:= 1
+ENABLE_FMRADIO_SMALL					:= 0
 # 84 bytes
-ENABLE_FLASHLIGHT_SOS       						:= 1
-ENABLE_UART                 						:= 1
-ENABLE_UART_CAT             						:= 0
+ENABLE_FLASHLIGHT_SOS       				:= 0
+ENABLE_UART                 				:= 1
+ENABLE_UART_CAT             				:= 0
 # Bause we can cut more... - 4108 bytes
-ENABLE_DTMF_CALLING         						:= 0
+ENABLE_DTMF_CALLING         				:= 0
 #DTMF REMOTEKILL
-ENABLE_REMOTEKILL									:= 0
+ENABLE_REMOTEKILL					:= 0
 # 1750Hz & 1050Hz FN1 FN2 Tones
-ENABLE_DTMF_SIDETONES				    			:= 1
-ENABLE_TX1750 										:= 0
+ENABLE_DTMF_SIDETONES				    	:= 0
+ENABLE_TX1750 						:= 1
 
 # Keep this in stock options, and add option in mods for extra rogers
 ENABLE_ROGER_DEFAULT					:= 1
-ENABLE_ROGER_MOTOTRBO					:= 1
-ENABLE_ROGER_TPT						:= 1
-ENABLE_ROGER_MOTOTRBOT40				:= 1
-ENABLE_ROGER_MOTOTRBOTLKRT80			:= 1
-ENABLE_ROGER_ROGERCOBRAAM845			:= 1
-ENABLE_ROGER_POLICE_ITA					:= 1
-ENABLE_ROGER_UV5RC						:= 1
-ENABLE_ROGER_MARIO						:= 1
-ENABLE_MDC                  			:= 1
+ENABLE_ROGER_MOTOTRBO					:= 0
+ENABLE_ROGER_TPT					:= 0
+ENABLE_ROGER_MOTOTRBOT40				:= 0
+ENABLE_ROGER_MOTOTRBOTLKRT80				:= 0
+ENABLE_ROGER_ROGERCOBRAAM845				:= 0
+ENABLE_ROGER_POLICE_ITA					:= 0
+ENABLE_ROGER_UV5RC					:= 0
+ENABLE_ROGER_MARIO					:= 0
+ENABLE_MDC                  				:= 0
 
 #======================= MODIFICATIONS ======================#
 # AM Modulation Fix - 544 bytes
-ENABLE_AM_FIX 										:= 1
+ENABLE_AM_FIX 						:= 1
 
-ENABLE_SQUELCH_MORE_SENSITIVE						:= 0
+ENABLE_SQUELCH_MORE_SENSITIVE				:= 1
 # Show Squelch Level at Memory channel
-ENABLE_SHOW_SQUELCH_LEVEL							:= 1
+ENABLE_SHOW_SQUELCH_LEVEL				:= 1
 # Restore FM in 1 second after RX - 0 bytes
-ENABLE_FMRADIO_FAST_RESTORE 						:= 1
+ENABLE_FMRADIO_FAST_RESTORE 				:= 1
 # Scan List Editor - 868 bytes
-ENABLE_SCANLIST										:= 1
-ENABLE_MISSED_CALL_NOTIFICATION_AND_BLINKING_LED 	:= 1
+ENABLE_SCANLIST						:= 1
+ENABLE_MISSED_CALL_NOTIFICATION_AND_BLINKING_LED 	:= 0
 # PTT-Hold - Press PTT to Start Transmit and Press again to STOP it
-ENABLE_PTT_HOLD										:= 1
+ENABLE_PTT_HOLD						:= 0
 # Battery percentage at the Welcome Message - 12 bytes
-ENABLE_VOLTAGE_PERCENTAGE_WELCOME_MESSAGE			:= 1
+ENABLE_VOLTAGE_PERCENTAGE_WELCOME_MESSAGE		:= 0
 # Battery percentage - 296 bytes
-ENABLE_STATUS_BATTERY_PERC 				 			:= 1
+ENABLE_STATUS_BATTERY_PERC 				:= 1
 # Show current while charging - 136 bytes Thanks Tunas1337
-ENABLE_BATTERY_CHARGING								:= 1
+ENABLE_BATTERY_CHARGING					:= 0
 # Enable Bigger Battery Save - 20 bytes
-ENABLE_BIGGER_BATTERY_SAVE							:= 1
+ENABLE_BIGGER_BATTERY_SAVE				:= 1
 # Invert LCD Colors
-ENABLE_LCD_INVERT_OPTION							:= 1
-#ENABLE_LCD_CONTRAST_OPTION 			 			:= 0 # WIP
+ENABLE_LCD_INVERT_OPTION				:= 1
+#ENABLE_LCD_CONTRAST_OPTION 			 	:= 1 # WIP
 # Mic Gain Bar while TXing - 255 bytes
-ENABLE_MIC_PLUS_GAIN_BAR_TX 						:= 1
+ENABLE_MIC_PLUS_GAIN_BAR_TX 				:= 1
 # Enable Vox 1920ms(max) delay - 0 bytes
-ENABLE_VOX_MAX_DELAY								:= 1
-ENABLE_NOSCANTIMEOUT    	    					:= 1
-ENABLE_KEEPNAMEONSAVE 			      				:= 1
-ENABLE_FASTER_CHANNEL_SCAN  						:= 1
+ENABLE_VOX_MAX_DELAY					:= 1
+ENABLE_NOSCANTIMEOUT    	    			:= 1
+ENABLE_KEEPNAMEONSAVE 			      		:= 1
+ENABLE_FASTER_CHANNEL_SCAN  				:= 1
 # Enable Timeout beep at the end of timeout (TOT) - 44 bytes
-ENABLE_TIMEOUT_ROGERBEEP_NOTIFICATION				:= 1
+ENABLE_TIMEOUT_ROGERBEEP_NOTIFICATION			:= 1
 # Enable Amplifier for SATCOM
-ENABLE_SATCOM_AMP									:= 0
+ENABLE_SATCOM_AMP					:= 1
 # CW Modulation
-ENABLE_CW                   						:= 0
+ENABLE_CW                   				:= 0
 
 #=============== EXTRA: MESSENGER ===============# 
 ENABLE_MESSENGER            				:= 0
 ENABLE_MESSENGER_MORE_ONE_LINE				:= 0
 # 124 bytes
-ENABLE_MESSENGER_SHOW_RX_FREQ				:= 1
+ENABLE_MESSENGER_SHOW_RX_FREQ				:= 0
 # 124 (+20) bytes
-ENABLE_MESSENGER_SHOW_RX_TX_FREQ			:= 1
+ENABLE_MESSENGER_SHOW_RX_TX_FREQ			:= 0
 # 156 bytes
-ENABLE_MESSENGER_UART						:= 1
+ENABLE_MESSENGER_UART					:= 0
 # 3408 bytes
-ENABLE_MESSENGER_ENCRYPTION             	:= 1
+ENABLE_MESSENGER_ENCRYPTION             		:= 0
 # 140 bytes
-ENABLE_MESSENGER_ROGERBEEP_NOTIFICATION 	:= 1
+ENABLE_MESSENGER_ROGERBEEP_NOTIFICATION 		:= 0
 
 # -------------- EXTRA: SPECTRUM --------------
-ENABLE_SPECTRUM            		 			:= 1
+ENABLE_SPECTRUM            		 		:= 1
 #ENABLE_SPECTRUM_NUNU           			:= 0
 SPECTRUM_AUTOMATIC_SQUELCH  				:= 1
 SPECTRUM_EXTRA_VALUES       				:= 1
 # Apply fix to Spectrum - 40 bytes
-ENABLE_AM_FIX_ON_SPECTRUM					:= 1
+ENABLE_AM_FIX_ON_SPECTRUM				:= 1
 # 3568 bytes
 ENABLE_ALL_REGISTERS        				:= 0
 # 0 bytes
@@ -106,18 +106,18 @@ ENABLE_DOCK 	                  			:= 0
 
 # ----- LOGO: ON/OFF Thanks to PixelGirl
 # 1348 bytes
-ENABLE_LOGO									:= 1
+ENABLE_LOGO						:= 0
 
 #Thanks to KD8CEC for sharing his code / We have to check the code better, i just code & paste it to the right places...
 # 1476 bytes
-ENABLE_LIVESEEK_MHZ_KEYPAD					:= 0
+ENABLE_LIVESEEK_MHZ_KEYPAD				:= 0
 
 
 # ---- DEBUGGING ----
 # ---- COMPILER/LINKER OPTIONS ----
-ENABLE_COMPRESS								:= 1
-ENABLE_OVERLAY 								:= 0
-ENABLE_SWD 									:= 0
+ENABLE_COMPRESS						:= 1
+ENABLE_OVERLAY 						:= 0
+ENABLE_SWD 						:= 0
 
 
 
